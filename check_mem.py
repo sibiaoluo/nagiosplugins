@@ -32,7 +32,7 @@ def getFreeMemory():
         for line in fd.readlines():
             if line.startswith('MemFree'):
                  k, v, u = line.split()
-                 return int(v)*1024
+                 return int(v)/1024
                        
 def main():
     opts, args = opt()
